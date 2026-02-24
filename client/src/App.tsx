@@ -1,9 +1,6 @@
 import { FormEvent, ReactNode, useEffect, useMemo, useState } from "react";
 import "./index.css";
 
-import portraitImage from "../../Daniel Portrait.jpeg";
-import bookCoverImage from "../../kleptocracy book cover.jpeg";
-
 type RevealProps = {
   children: ReactNode;
 };
@@ -105,7 +102,7 @@ function App() {
             </div>
           </Reveal>
           <Reveal>
-            <img src={portraitImage} alt="Daniel Egunjobi Ololade portrait" className="portrait" />
+            <div className="portrait portrait-placeholder" role="img" aria-label="Daniel Egunjobi Ololade portrait placeholder"><span>Portrait Placeholder</span></div>
           </Reveal>
         </div>
       </section>
@@ -176,7 +173,7 @@ function App() {
       <section id="book" className="section book-section">
         <div className="container split-grid">
           <Reveal>
-            <img src={bookCoverImage} alt="Kleptocracy book cover" className="book-cover" />
+            <div className="book-cover book-placeholder" role="img" aria-label="Kleptocracy book cover placeholder"><span>Kleptocracy<br/>Cover Placeholder</span></div>
           </Reveal>
           <Reveal>
             <h2>Kleptocracy (Our Leaders Are Mad, The People Are Madder)</h2>

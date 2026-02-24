@@ -121,6 +121,29 @@ input {
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
 .revealed { opacity: 1; transform: translateY(0); }
 
+
+.portrait-placeholder, .book-placeholder {
+  display: grid;
+  place-items: center;
+  color: rgba(248, 244, 234, 0.92);
+  border: 1px dashed rgba(212,175,55,.6);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.portrait-placeholder {
+  min-height: 520px;
+  background: linear-gradient(135deg, rgba(93,122,111,.28), rgba(13,27,42,.9));
+}
+
+.book-placeholder {
+  min-height: 540px;
+  background: linear-gradient(145deg, rgba(212,175,55,.16), rgba(27,38,59,.9));
+}
+
+.book-placeholder span { line-height: 1.5; }
+
 @media (max-width: 900px) {
   .hero-content, .split-grid { grid-template-columns: 1fr; }
   .section { padding: 4rem 0; }
